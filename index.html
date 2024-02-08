@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function arredondar(numero) {
+        return Math.round((numero / 5) * 5);
+      }
+
+      function calcularIMC(peso, altura) {
+        var imc = peso / altura ** 2;
+        console.log(imc);
+        return arredondar(imc);
+      }
+
+      var peso = parseInt(prompt("Insira o peso em kg (exemplo: 60):"));
+      console.log(peso);
+
+      var altura = parseFloat(
+        prompt("Insira a altura em metros (exemplo: 1.70):")
+      );
+      console.log(altura);
+
+      alert("O IMC é: " + calcularIMC(peso, altura));
+    </script>
+  </head>
+  <body></body>
+</html>
